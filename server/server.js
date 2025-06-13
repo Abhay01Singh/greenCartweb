@@ -21,7 +21,7 @@ await connectCloudinary();
 // allow multiple origins
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://greencart-sigma-three.vercel.app",
+  "https://greencart-sage-pi.vercel.app",
 ];
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
