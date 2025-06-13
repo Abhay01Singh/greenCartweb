@@ -19,10 +19,7 @@ await connectDB();
 await connectCloudinary();
 
 // allow multiple origins
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://greencart-livid.vercel.app",
-];
+const allowedOrigins = ["http://localhost:5173"];
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 
