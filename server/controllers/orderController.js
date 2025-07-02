@@ -35,8 +35,8 @@ export const placeOrderCOD = async (req, res) => {
 // Place Order Online Payment : /api/order/stripe
 export const placeOrderStripe = async (req, res) => {
   try {
-    const userId = req.user.id;
-    const { items, address } = req.body;
+    // const userId = req.user.id;
+    const { userId, items, address } = req.body;
     const { origin } = req.headers;
     if (!address || items.length === 0) {
       return res.json({ success: false, message: "Invalid data" });

@@ -6,6 +6,7 @@ import ProductCard from "../components/ProductCard";
 
 const ProductCategory = () => {
   const { products } = useAppContext();
+  // Get the category from the URL parameters
   const { category } = useParams();
   const searchCategory = categories.find(
     (item) => item.path.toLowerCase() === category

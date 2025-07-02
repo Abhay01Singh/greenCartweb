@@ -86,7 +86,7 @@ export const login = async (req, res) => {
   }
 };
 
-// check auth : /api/user/is-path
+// check auth : /api/user/is-auth
 
 export const isAuth = async (req, res) => {
   try {
