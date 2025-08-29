@@ -21,7 +21,7 @@ await connectCloudinary();
 // allow multiple origins
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://greencartweb-rhbw.onrender.com",
+  "https://greencartweb-frontend.onrender.com",
 ];
 
 app.post("/stripe", express.raw({ type: "application/json" }), stripeWebhooks);
